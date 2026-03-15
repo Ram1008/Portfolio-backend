@@ -1,0 +1,46 @@
+{
+  "name": "tryon-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ram1008/Tryon-backend.git"
+  },
+  "author": "Ram Chandel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ram1008/Tryon-backend/issues"
+  },
+  "homepage": "https://github.com/Ram1008/Tryon-backend#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^7.19.0",
+    "bcryptjs": "^3.0.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.10.0",
+    "jsonwebtoken": "^9.0.3",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^9.3.0",
+    "morgan": "^1.10.1",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^8.0.2",
+    "phantomjs-prebuilt": "^2.1.16",
+    "rate-limiter-flexible": "^10.0.0",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

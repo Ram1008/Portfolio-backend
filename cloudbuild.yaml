@@ -1,0 +1,12 @@
+
+# Don't uncomment this code, it's just for reference
+
+# steps:
+#   - name: "gcr.io/cloud-builders/docker"
+#     args: ["build", "-t", "gcr.io/tick-your-tour-cloud/tick-your-tour-face-image:latest", "."]
+
+#   - name: "gcr.io/cloud-builders/docker"
+#     args: ["push", "gcr.io/tick-your-tour-cloud/tick-your-tour-face-image:latest"]
+
+# images:
+#   - "gcr.io/tick-your-tour-cloud/tick-your-tour-face-image:latest"
