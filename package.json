@@ -36,6 +36,7 @@
     "nodemailer": "^8.0.2",
     "phantomjs-prebuilt": "^2.1.16",
     "rate-limiter-flexible": "^10.0.0",
+    "slugify": "^1.6.9",
     "socket.io": "^4.8.3",
     "socket.io-client": "^4.8.3",
     "xlsx": "^0.18.5"

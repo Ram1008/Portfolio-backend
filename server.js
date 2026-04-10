@@ -7,6 +7,8 @@ import morgan from 'morgan';
 import { rateLimit } from 'express-rate-limit';
 import { ALLOWED_ORIGINS } from './constants/serverConstants.js';
 import connectDB from './db.js';
+import authRoutes from './routes/authRoutes.js';
+import projectRoutes from './routes/projectRoutes.js';
 
 
 dotenv.config();
@@ -127,16 +129,20 @@ app.get('/', (_, res) => {
   res.json({ success: true, message: 'Server is running fine!' });
 });
 
-// const routes = [
-//   {
-//     path: API_VERSION_1,
-//     router: 
-//   }
-// ]
+const routes = [
+  {
+    path: `${API_VERSION_1}auth`,
+    router: authRoutes
+  },
+  {
+    path: `${API_VERSION_1}projects`,
+    router: projectRoutes
+  }
+]
 
-// routes.forEach((route) => {
-//   app.use(route.path, route.router);
-// });
+routes.forEach((route) => {
+  app.use(route.path, route.router);
+});
 
 
 app.listen(PORT, () => {
